@@ -1,0 +1,119 @@
+1. What is Space Complexity?
+
+Space Complexity measures the total memory used by an algorithm as a function of input size n.
+
+It includes:
+
+Memory for input data
+
+Memory for auxiliary variables
+
+Memory used by recursion stack
+
+👉 Expressed using asymptotic notation like O( )
+
+2. Why Space Complexity is Important
+
+Efficient use of limited memory
+
+Important for embedded systems
+
+Helps compare algorithms based on memory usage
+
+3. Components of Space Complexity
+1️⃣ Fixed Part
+
+Memory independent of input size:
+
+Constants
+
+Variables
+
+Program instructions
+
+👉 O(1)
+
+2️⃣ Variable Part
+
+Memory that depends on input size:
+
+Arrays
+
+Dynamic memory
+
+Recursive calls
+
+👉 O(n), O(log n), etc.
+
+4. Auxiliary Space vs Total Space
+Type	Meaning
+Auxiliary Space	Extra memory used by algorithm (excluding input)
+Total Space	Input space + Auxiliary space
+
+📌 Exams usually ask for auxiliary space complexity
+
+5. Asymptotic Notations for Space
+
+Same as time complexity:
+
+Big-O (Upper bound)
+
+Big-Ω (Lower bound)
+
+Big-Θ (Tight bound)
+
+6. Common Space Complexities
+Space Complexity	Meaning	Example
+O(1)	Constant space	Swap two variables
+O(log n)	Logarithmic space	Recursive binary search
+O(n)	Linear space	Arrays, stack
+O(n²)	Quadratic space	2D matrix
+O(n!)	Factorial space	Backtracking
+7. Space Complexity Rules
+Rule 1: Simple Variables → O(1)
+int a, b, c;
+
+Rule 2: Arrays → O(n)
+int arr[n];
+
+Rule 3: 2D Arrays → O(n²)
+int matrix[n][n];
+
+Rule 4: Recursion Stack
+
+Each recursive call uses stack memory.
+
+Example:
+
+Depth of recursion = n
+Space = O(n)
+
+8. Space Complexity Examples
+Linear Search
+
+Auxiliary space: O(1)
+
+Binary Search (Recursive)
+
+Auxiliary space: O(log n)
+
+Merge Sort
+
+Auxiliary space: O(n)
+
+Quick Sort
+
+Average case: O(log n)
+
+Worst case: O(n)
+
+9. In-Place vs Out-of-Place Algorithms
+Type	Space
+In-Place	O(1)
+Out-of-Place	O(n) or more
+
+Example:
+
+In-place → Bubble Sort
+
+Out-of-place → Merge Sort
