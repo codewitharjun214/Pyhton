@@ -69,3 +69,22 @@ print(x > y)
 print(x < y)
 print(x >= y)
 print(x <= y)
+
+
+"""
+Operator	Example	Same As	T
+=	        x = 5	x = 5	
++=	        x += 3	x = x + 3	
+-=	        x -= 3	x = x - 3	
+*=	        x *= 3	x = x * 3	
+/=	        x /= 3	x = x / 3	
+%=	        x %= 3	x = x % 3	
+//=	        x //= 3	x = x // 3	
+**=	        x **= 3	x = x ** 3	
+&=	        x &= 3	x = x & 3	
+|=	        x |= 3	x = x | 3	
+^=	        x ^= 3	x = x ^ 3	
+>>=	        x >>= 3	x = x >> 3	
+<<=	        x <<= 3	x = x << 3
+
+"""
