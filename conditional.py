@@ -1,6 +1,6 @@
 #write a code for grade system using conditional statements 
 
-marks = 75
+marks = int(input("enter students marks :"))
 
 if(marks >= 90):
    grade = "A"
@@ -14,4 +14,4 @@ elif(marks >= 70 and marks < 80):
 else:
     grade = "D"
 
-print("grade of the student :" , grade)
+print("Grade of the student :" , grade)
